@@ -22,7 +22,7 @@ header {
   text-align: center;
   background: var(--dark-blue);
   color: var(--white);
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 h1 {
@@ -62,7 +62,7 @@ main {
   margin: 20px;
 }
 
-/* "About her" section style */
+/* "About Her" section style */
 h2 {
   font-size: 1.5rem;
   margin-bottom: 10px;
@@ -71,6 +71,7 @@ h2 {
 
 content {
   font-family: 'Times New Roman', Times, serif;
+  padding:20px;
 }
 
 content ul {
@@ -81,7 +82,7 @@ content ul {
   background-color: var(--dark-blue);
 }
 
-/* "Her work" section style */
+/* "Her Work" section style */
 .application {
   background-color: var(--white);
   padding: 50px;
@@ -115,7 +116,7 @@ content ul {
   flex-grow: 1;
 }
 
-/* "Contact" section style */
+/* "Contact Her" section style */
 aside {
   flex:1;
   background-color: var(--tan);
@@ -135,7 +136,7 @@ aside {
 } 
 
 .contactinfo ul li {
-  margin-bottom: 20px;
+  padding: 20px;
 }
 
 .contactinfo ul li a {
@@ -154,7 +155,7 @@ footer {
   text-align: center;
   background: var(--dark-blue);
   color: var(--white);
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 /* Screen change */
