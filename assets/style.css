@@ -1,0 +1,165 @@
+:root {
+  --white: #fff;
+  --dark-blue: #13293d;
+  --tan: #d8a47f;
+  --border-radius: 50px;
+}
+
+body {
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: flex-start;
+}
+
+/* Header style */
+header {
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  text-align: center;
+  background: var(--dark-blue);
+  color: var(--white);
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+nav {
+  display: flex;
+  background-color: var(--tan);
+}
+
+nav a {
+  color: var(--dark-blue);
+  padding: 20px;
+  text-decoration: none;
+  text-align: center;
+}
+
+nav a:hover {
+  background-color: var(--white);
+  color: var(--dark-blue);
+}
+
+header img {
+  padding: 20px;
+  width: 120px;
+}
+
+main {
+  display:flex;
+  flex-wrap: wrap;
+}
+
+.centerbody {
+  flex:4;
+  margin: 20px;
+}
+
+/* "About her" section style */
+h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color:var(--dark-blue)
+}
+
+content {
+  font-family: 'Times New Roman', Times, serif;
+}
+
+content ul {
+  list-style-type: circle;
+  color: var(--white);
+  font-size: 20px;
+  padding: 20px;
+  background-color: var(--dark-blue);
+}
+
+/* "Her work" section style */
+.application {
+  background-color: var(--white);
+  padding: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.card {
+  border-style: solid;
+  border-width: 1px;
+  border-radius: var(--border-radius);
+  padding: 10px;
+  flex: 0 0 300px;
+  transform: rotate(8deg);
+  box-shadow: 10px 10px 5px #aaaaaa;
+  margin: 20px;
+}
+
+.card header {
+  border-radius: var(--border-radius) var(--border-radius) 0 0;
+  padding: 20px;
+}
+
+.card img {
+  max-width:100%;
+  object-fit: contain;
+}
+
+.card:hover {
+  flex-grow: 1;
+}
+
+/* "Contact" section style */
+aside {
+  flex:1;
+  background-color: var(--tan);
+  padding: 20px;
+  justify-content: center;
+  border: 3px solid var(--dark-blue);
+}
+
+.contactinfo h2{
+  text-align: center;
+  margin-bottom:20px;
+}
+
+.contactinfo ul {
+  list-style: none;
+  display: block;
+} 
+
+.contactinfo ul li {
+  margin-bottom: 20px;
+}
+
+.contactinfo ul li a {
+  color: var(--dark-blue);
+}
+
+.contactinfo ul li a:hover {
+  background-color: var(--white);
+}
+
+/* Footer style */
+footer {
+  width: 100%;
+  bottom: 0;
+  padding: 20px;
+  text-align: center;
+  background: var(--dark-blue);
+  color: var(--white);
+  margin-top: 20px;
+}
+
+/* Screen change */
+@media screen and (max-width: 768px) {
+  header,main {
+    flex-direction: column;
+  }
+}
